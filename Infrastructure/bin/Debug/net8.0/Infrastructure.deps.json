@@ -167,6 +167,14 @@
           }
         }
       },
+      "OneOf/3.0.271": {
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "System.IdentityModel.Tokens.Jwt/8.6.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "8.6.0",
@@ -182,7 +190,8 @@
       "Application/1.0.0": {
         "dependencies": {
           "Domanin": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "8.0.0"
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "OneOf": "3.0.271"
         },
         "runtime": {
           "Application.dll": {
@@ -304,6 +313,13 @@
       "sha512": "sha512-ga4ASKm8EezJ+Oj4uvTNE0xjIWy27Ix5pOZz737CnLzxv7ClFnelX+YWbFuiO1Qj2zVoIpsPqKJRGHGlpFF6eQ==",
       "path": "microsoft.identitymodel.tokens/8.6.0",
       "hashPath": "microsoft.identitymodel.tokens.8.6.0.nupkg.sha512"
+    },
+    "OneOf/3.0.271": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pqpqeK8xQGggExhr4tesVgJkjdn+9HQAO0QgrYV2hFjE3y90okzk1kQMntMiUOGfV7FrCUfKPaVvPBD4IANqKg==",
+      "path": "oneof/3.0.271",
+      "hashPath": "oneof.3.0.271.nupkg.sha512"
     },
     "System.IdentityModel.Tokens.Jwt/8.6.0": {
       "type": "package",

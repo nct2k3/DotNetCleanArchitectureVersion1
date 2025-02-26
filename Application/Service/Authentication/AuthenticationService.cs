@@ -1,4 +1,5 @@
-﻿using Application.Common.Interfaces.Authentication;
+﻿using Application.Common.Errors;
+using Application.Common.Interfaces.Authentication;
 using Application.Common.Interfaces.Persistence;
 using Domanin.Entities;
 
@@ -51,19 +52,19 @@ public class AuthenticationService : IAuthenticationService
     {
         if (_userRepository.GetUserByEmail(Email) is not null)
         {
-            throw new Exception("User already exists");
+            throw new DuplicateEmailException(); 
         }
-        var User = new User { FirstName = FirstName,
+        var user = new User
+        {
+            FirstName = FirstName,
             LastName = LastName,
             Email = Email,
             Password = Password,
         };
-        _userRepository.Add(User);
+        _userRepository.Add(user);
 
-        var token= _jwtTokenGenerator.GenerateJwtToken(User);
-        return new AuthenticationResult(
-            User,
-            token
-        );
+        var token = _jwtTokenGenerator.GenerateJwtToken(user);
+        return new AuthenticationResult(user, token);
     }
+
 }

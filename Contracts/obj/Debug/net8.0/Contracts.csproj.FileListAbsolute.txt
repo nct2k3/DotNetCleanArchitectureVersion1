@@ -21,3 +21,15 @@ C:\Users\T14 Gen 3\RiderProjects\DotnetArchitecture\Contracts\obj\Debug\net8.0\C
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitecture\Contracts\obj\Debug\net8.0\refint\Contracts.dll
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitecture\Contracts\obj\Debug\net8.0\Contracts.pdb
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitecture\Contracts\obj\Debug\net8.0\ref\Contracts.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\bin\Debug\net8.0\Contracts.deps.json
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\bin\Debug\net8.0\Contracts.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\bin\Debug\net8.0\Contracts.pdb
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\obj\Debug\net8.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfo.cs
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\obj\Debug\net8.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\obj\Debug\net8.0\Contracts.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\obj\Debug\net8.0\refint\Contracts.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\obj\Debug\net8.0\Contracts.pdb
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Contracts\obj\Debug\net8.0\ref\Contracts.dll
