@@ -33,6 +33,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
     
+    
+    
+    
 }
 // handling error not handdle by fillter - controller result text exception
 app.UseMiddleware<ErrorHandlingMiddleware>();
