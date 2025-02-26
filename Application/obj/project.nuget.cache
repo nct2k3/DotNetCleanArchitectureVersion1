@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5ir48iEFj8k=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\T14 Gen 3\\RiderProjects\\DotnetArchitectureV2\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\T14 Gen 3\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\T14 Gen 3\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
