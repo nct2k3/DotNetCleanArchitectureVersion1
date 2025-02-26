@@ -33,3 +33,4 @@ C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Domanin\obj\Debug\net8.0\D
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Domanin\obj\Debug\net8.0\refint\Domanin.dll
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Domanin\obj\Debug\net8.0\Domanin.pdb
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Domanin\obj\Debug\net8.0\ref\Domanin.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Domanin\obj\Debug\net8.0\Domanin.csproj.AssemblyReference.cache

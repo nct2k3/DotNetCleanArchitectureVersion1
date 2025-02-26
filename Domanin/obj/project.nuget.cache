@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EjZWC7D/xlg=",
+  "dgSpecHash": "sqfUQY5BnZ8=",
   "success": true,
   "projectFilePath": "C:\\Users\\T14 Gen 3\\RiderProjects\\DotnetArchitectureV2\\Domanin\\Domanin.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\T14 Gen 3\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,21 +1,14 @@
 using Application;
-using Application.Service.Authentication;
 using Infrastructure;
-using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-using WebApplication3.Errors;
+using Presentation;
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddControllers();
 builder.Services.AddApplication();
+builder.Services.AddPresentation();
 builder.Services.AddInfrastructure(builder.Configuration);
-
-builder.Services.AddSingleton<ProblemDetailsFactory, MyProblemDetailFactory>();
-
 
 
 

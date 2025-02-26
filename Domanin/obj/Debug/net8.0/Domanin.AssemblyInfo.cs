@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Domanin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8795b51439c6bef99b81f9b2990b0e7bdcb093be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f3e57e6e945890fa655e64a04c04e0db3159bd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Domanin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Domanin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

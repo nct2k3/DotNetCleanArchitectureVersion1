@@ -1,13 +1,21 @@
-﻿using Application.Service.Authentication;
-namespace Application;
+﻿using System.Reflection;
+//using Application.Common.Behavios;
+using Application.Service.Authentication;
+using FluentValidation;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-// class register service to program
-public static class DependancyInjection
+
+namespace Application;
+
+public static class DependencyInjection
 {
-    public static IServiceCollection AddApplication(this IServiceCollection services )
-    
+    public static IServiceCollection AddApplication(this IServiceCollection services)
     {
-        services.AddScoped<IAuthenticationService, AuthenticationService>();
+       
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly));
+        /*services.AddScoped<IPipelineBehavior<RegisterCommand,AuthenticationResult>,
+            ValidationRegisterCommandBehavior>();*/
+        services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
         return services;
     }
 }

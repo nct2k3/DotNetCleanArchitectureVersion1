@@ -3,7 +3,7 @@ namespace Contracts
 {
     public record AuthenticationResponse(
         Guid Id,
-        string FistName,
+        string FirstName,
         string LastName,
         string Email,
         string Token

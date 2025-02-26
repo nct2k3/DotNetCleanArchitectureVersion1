@@ -142,3 +142,10 @@ C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\obj\Debug\net
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\obj\Debug\net8.0\Presentation.genruntimeconfig.cache
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\obj\Debug\net8.0\ref\Presentation.dll
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\OneOf.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\MediatR.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\Mapster.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\Mapster.Core.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\Mapster.DependencyInjection.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

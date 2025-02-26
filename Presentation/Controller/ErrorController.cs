@@ -6,7 +6,7 @@ using WebApplication3.Errors;
 
 namespace WebApplication3.Controller
 {
-    [ApiController]
+  /*  [ApiController]
     [Route("/error")]
     public class ErrorController : ControllerBase
     {
@@ -39,6 +39,25 @@ namespace WebApplication3.Controller
                 StatusCode = statusCode
             };
         }
-    }
+    }*/
+  
+  [Route("/error")]
+  public class ErrorsController : ControllerBase
+  {
+      public IActionResult Error()
+      {
+          Exception? exception = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
+
+          var (statusCode, message) = exception switch
+          {
+              IServiceException serviceException => ((int)serviceException.StatusCode, serviceException.Title),
+              _ => (StatusCodes.Status500InternalServerError, "An unexpected error occurred.")
+          };
+
+          return Problem(statusCode: statusCode, title: message);
+      }
+  }
+
+
 
 }
