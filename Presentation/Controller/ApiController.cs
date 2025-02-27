@@ -4,8 +4,10 @@ using Presentation.Common.Http;
 
 namespace WebApplication3.Controller;
 [ApiController]
+[Route("api/[controller]")]
 public class ApiController : ControllerBase
 {
+    [HttpPost("problem")] 
     public IActionResult Problem(List<Error> errors)
     {
         var firstError = errors[0];

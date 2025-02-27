@@ -149,3 +149,8 @@ C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\Mapster.Core.dll
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\Mapster.DependencyInjection.dll
 C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\ErrorOr.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\FluentResults.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\T14 Gen 3\RiderProjects\DotnetArchitectureV2\Presentation\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

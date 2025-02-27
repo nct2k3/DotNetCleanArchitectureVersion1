@@ -1,52 +1,35 @@
-﻿/*using Application.Service.Authentication;
-using FluentValidation;
+﻿using FluentValidation;
 using MediatR;
-using OneOf.Types;
+using ErrorOr;
 
+namespace Application.Common.Behaviors;
 
-namespace Application.Common.Behavios;
-public class Error
+public class ValidationBehavior<TRequest, TResponse> :
+    IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
+    where TResponse : IErrorOr
 {
-    public string Code { get; }
-    public string Message { get; }
+    private readonly IValidator<TRequest> _validator;
 
-    private Error(string code, string message)
+    public ValidationBehavior(IValidator<TRequest> validator)
     {
-        Code = code;
-        Message = message;
+        _validator = validator;
     }
 
-    public static Error Validation(string propertyName, string errorMessage)
+    public async Task<TResponse> Handle(TRequest request, 
+        RequestHandlerDelegate<TResponse> next,
+        CancellationToken cancellationToken)
     {
-        return new Error($"ValidationError:{propertyName}", errorMessage);
-    }
-}
-
-public class ValidationRegisterCommandBehavior:
-    IPipelineBehavior<RegisterCommand,AuthenticationResult>
-{
-    private readonly IValidator<RegisterCommand> _registerCommandValidator;
-
-    public ValidationRegisterCommandBehavior(IValidator<RegisterCommand> registerCommandValidator)
-    {
-        _registerCommandValidator = registerCommandValidator;
-    }
-
-    public async Task<AuthenticationResult> Handle(RegisterCommand request, 
-        RequestHandlerDelegate<AuthenticationResult> next,
-        CancellationToken cancellationToken
-        )
-    {
-        var validationResult = await _registerCommandValidator.ValidateAsync(request);
+        var validationResult = await _validator.ValidateAsync(request, cancellationToken);
         if (validationResult.IsValid)
         {
             return await next();
         }
+
         var errors = validationResult.Errors
-            .ConvertAll(error => Error.Validation(error.PropertyName, error.ErrorMessage));
+            .ConvertAll(validationFailure =>
+                Error.Validation(validationFailure.PropertyName, validationFailure.ErrorMessage))
+            .ToList();
+        return (TResponse)(object)ErrorOr<TResponse>.From(errors);
 
-
-        // Throw hoặc xử lý lỗi theo cách của bạn
-       // return errors;
     }
-}*/
+}
